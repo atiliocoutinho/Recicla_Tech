@@ -75,7 +75,7 @@ nav {
   padding: 1dvw 2dvw;
   background-color: #16a34a4c;
   backdrop-filter: blur(10px);
-  color: #fcfcfc;
+  color: #1f2937;
   
 }
 
@@ -110,12 +110,39 @@ nav .largebutton {
 .header-section {
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
 }
 
+.greenbutton { background-color: #16a34a;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  border: none;
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.bluebutton {  
+  background-color: #2564ebcd;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  border: none;
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;}
+
 .reciclagem {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .header-content {
@@ -150,8 +177,9 @@ article div {
 
 main {
   line-height: 1.6;
-  margin: 20px;
 }
+
+.how-title {padding: 40px 0 20px 20px;}
 
 //how it works //
 
@@ -159,30 +187,40 @@ main {
   display: flex;
   gap: 2dvw;
   justify-content: center;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .card {
+  width: 400px;
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  align-items: center;
   height: auto;
 }
 
 aside {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+}
+
+.how-it-works li{
+  list-style: none;
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .green {
   color: #f4f4f4;
   background-color: #16a34a;
   text-align: center;
-  padding: 13px 13px;
-  border-radius: 100%;
+  padding: 10px 10px;
+  border-radius: 50%;
   margin-right: 10px;
 }
 
@@ -190,8 +228,8 @@ aside {
   color: #f4f4f4;
   background-color: #2563eb;
   text-align: center;
-  padding: 13px 13px;
-  border-radius: 100%;
+  padding: 10px 10px;
+  border-radius: 50%;
   margin-right: 10px;
 }
 
@@ -202,6 +240,7 @@ aside {
 #section2{
    background-color: #f4f4f4;
    margin: 40px 0;
+   padding: 20px;
 }
 
 .available-products {
