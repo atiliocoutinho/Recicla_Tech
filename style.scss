@@ -90,7 +90,8 @@ h4 {
 }
 
 .title {
-  margin: 20px 0px 20px 40px;
+  padding-left: 40px;
+  padding-top: 20px;
 
   h2 {
     margin-bottom: 10px;
@@ -295,19 +296,20 @@ main {
 
 .avaliable {
   background-color: $fundo;
-  padding: 10px 0 20px 0;
+  padding: 10px 0 40px 0;
   margin: 0 0 40px 0;
+  align-items: center;
 
   .products {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 2vw;
     margin-top: 40px;
   }
 
   .card_ad {
-    width: 400px;
+    width: 250px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -376,14 +378,227 @@ main {
   text-align: center;
 }
 
-footer {
-  background-color:$blued;
-  color: $txtl;
-  padding: 20px;
-  text-align: center;
+footer{
 
-   p {
+  background-color:$blued;
+
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $txtl;
+      padding: 20px;
+      text-align: center;
+
+      div {
+        max-width: 200px;
+        line-height: 1.6;
+      }
+
+      .logo2{
+        width: 200px;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          color: #b7b7b7;
+          cursor: pointer;
+
+          &:hover {
+            color: $txtl;
+          }
+        }
+      }
+
+      h3 {
+        color: $txtl;
+        
+      }
+
+      p {
+        font-size: small;
+      }
+      
+    }
+    p {
     margin: 5px 0;
     color: $txtl;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 728px) {
+  /* Header e Navegação */
+  header nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+
+    .logonav {
+      width: 100px;
+      align-items: left;
+    }
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 8px 0;
+    font-size: 1.1rem;
+  }
+
+  header nav .greenbutton {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero .hero-content {
+    max-width: 100%;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .hero .hero-buttons .greenbutton,
+  .hero .hero-buttons .bluebutton {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .hero .reciclagem {
+    order: -1;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  /* Dados */
+  .dados {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .dados div h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Main - Como Funciona */
+  main .how-it-works {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .how-it-works .card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .how-it-works .card aside img {
+    width: 40px;
+  }
+
+  .how-it-works .card aside h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Produtos Disponíveis */
+  .avaliable .products {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .avaliable .card_ad {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .avaliable .card_ad img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Comentários */
+  .commits .review {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .commits .review .coment {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .commits .review .coment p {
+    font-size: 0.85rem;
+  }
+
+  /* Final */
+  .final {
+    padding: 30px 20px;
+  }
+
+  .final .greenbutton,
+  .final .bluebutton {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  /* Footer */
+  footer .footer-flex {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  footer .footer-flex div {
+    max-width: 100%;
+  }
+
+  footer .footer-flex .logo2 {
+    width: 150px;
+  }
+
+  footer .footer-flex .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-flex .redes img {
+    margin: 8px;
   }
 }
