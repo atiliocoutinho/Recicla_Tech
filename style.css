@@ -27,7 +27,7 @@ h2 {
 
 p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 200;
   color: #0f1421;
 }
 
@@ -69,7 +69,7 @@ h4 {
 }
 
 .title {
-  margin: 20px;
+  margin: 20px 0px 20px 40px;
 }
 .title h2 {
   margin-bottom: 10px;
@@ -138,12 +138,18 @@ header .hero .hero-content .hero-buttons .bluebutton {
   justify-content: center;
   gap: 10px;
 }
+header .hero .hero-content .hero-buttons .bluebutton .hover-icon {
+  display: none;
+}
 header .hero .hero-content .hero-buttons .bluebutton:hover {
   background-color: #2563eb;
   color: #fcfcfc;
 }
-header .hero .hero-content .hero-buttons .bluebutton:hover img {
+header .hero .hero-content .hero-buttons .bluebutton:hover .default-icon {
   display: none;
+}
+header .hero .hero-content .hero-buttons .bluebutton:hover .hover-icon {
+  display: block;
 }
 
 .dados {
@@ -169,26 +175,137 @@ main .how-it-works {
   justify-content: center;
   gap: 1vw;
   padding: 40px 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 main .how-it-works .card {
-  background-color: #f3f5f8;
+  flex: 1;
   border-radius: 10px;
   padding: 20px;
   width: 400px;
-  text-align: center;
+  height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 main .how-it-works .card aside {
   display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 main .how-it-works .card aside img {
   width: 50px;
   margin-right: 10px;
 }
 main .how-it-works .card aside h2 {
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+main .how-it-works .card aside .titleg {
+  color: #16a34a;
+}
+main .how-it-works .card aside .titleb {
+  color: #2563eb;
 }
 main .how-it-works .card p {
   font-size: 1rem;
   color: #4b5563;
+  text-align: left;
+  margin-bottom: 15px;
+}
+main .how-it-works .card ol {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: step;
+  line-height: 1.9;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+main .how-it-works .card .spang {
+  color: #16a34a;
+  margin-right: 5px;
+}
+main .how-it-works .card .spanb {
+  color: #2563eb;
+  margin-right: 5px;
+}
+main .how-it-works .card li {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.avaliable {
+  background-color: #f3f5f8;
+  padding: 10px 0 20px 0;
+  margin: 0 0 40px 0;
+}
+.avaliable .products {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 40px;
+}
+.avaliable .card_ad {
+  width: 400px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.avaliable .card_ad .bluebutton {
+  margin-top: 10px;
+}
+.avaliable .card_ad img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.commits .review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  margin: 0 0 40px 0;
+}
+.commits .review .coment {
+  margin-top: 40px;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.commits .review .coment img {
+  align-items: left;
+}
+.commits .review .coment p {
+  font-size: 0.9;
+  margin: 10px;
+  height: auto;
+  overflow: hidden;
+}
+.commits .review .user-card {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 10px;
+}
+
+.final {
+  padding: 40px 0 40px 0;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  background-color: #1f2937;
+  color: #fcfcfc;
+  padding: 20px;
+  text-align: center;
+}
+footer p {
+  margin: 5px 0;
+  color: #fcfcfc;
 }/*# sourceMappingURL=style.css.map */
